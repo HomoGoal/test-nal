@@ -3,7 +3,9 @@ type UrlType = {
   Detail: string;
 };
 
+const URL = "https://homogoal.github.io/test-nal/";
+
 export const Router: UrlType = {
-  Home: "/",
-  Detail: "/detail/:id",
+  Home: URL,
+  Detail: `${URL}detail/:id`,
 };
