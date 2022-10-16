@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Home } from "../components/Home";
 import { DetailBlog } from "../components/DetailBlog";
@@ -19,6 +19,9 @@ export function RouterLink() {
 
   const { first, auth } = useSelector((state: any) => state.authReducer);
 
+  const location = useLocation();
+
+  console.log(location);
   useEffect(() => {
     if (first) {
       const accessToken = webStorage.getToken();
