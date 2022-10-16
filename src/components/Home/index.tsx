@@ -9,7 +9,7 @@ import { ModalCreateBlog } from "../ModalCreateBlog";
 import { ListBlogType } from "src/types/home/home.type";
 import { optionsSortBy, optionsSortByDirection } from "./mock-data";
 
-export function Home() {
+export default function Home() {
   const dispatch = useDispatch();
 
   const { loading, listBlog } = useSelector((state: any) => state.blogReducer);
