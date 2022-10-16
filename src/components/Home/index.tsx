@@ -119,7 +119,7 @@ export function Home() {
       <ul className={styles.blogListWrap}>
         {list?.map((x: any) => (
           <li className={styles.blogItem}>
-            <a href={`/test-nal/${x?.id}`}>
+            <a href={`https://homogoal.github.io/test-nal/${x?.id}`}>
               {loading ? (
                 <div className={styles.loadingContainer}>
                   <Spin size="large" />
