@@ -25,7 +25,7 @@ export function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href={URL}>
+        <a className="navbar-brand" href="/test-nal">
           BLOG-INTERVIEW TEXT
         </a>
         <div className={styles.avatarWrap}>

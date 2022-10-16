@@ -7,5 +7,5 @@ export const URL = "https://homogoal.github.io/test-nal/";
 
 export const Router: UrlType = {
   Home: `/test-nal`,
-  Detail: `/test-nal/a`,
+  Detail: `/test-nal/:id`,
 };
