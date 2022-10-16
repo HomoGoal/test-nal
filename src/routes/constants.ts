@@ -5,7 +5,9 @@ type UrlType = {
 
 export const URL = "https://homogoal.github.io/test-nal/";
 
+const host = "homogoal.github.io";
+
 export const Router: UrlType = {
-  Home: URL,
-  Detail: `${URL}detail/:id`,
+  Home: `/test-nal`,
+  Detail: `/test-nal/detail/:id`,
 };
