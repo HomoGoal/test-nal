@@ -8,6 +8,7 @@ import { Pagination, Spin, Input, Select, Form, Button } from "antd";
 import { ModalCreateBlog } from "../ModalCreateBlog";
 import { ListBlogType } from "src/types/home/home.type";
 import { optionsSortBy, optionsSortByDirection } from "./mock-data";
+import { URL } from "src/routes/constants";
 
 export function Home() {
   const dispatch = useDispatch();
@@ -119,7 +120,7 @@ export function Home() {
       <ul className={styles.blogListWrap}>
         {list?.map((x: any) => (
           <li className={styles.blogItem}>
-            <a href={`/detail/${x?.id}`}>
+            <a href={`${URL}detail/${x?.id}`}>
               {loading ? (
                 <div className={styles.loadingContainer}>
                   <Spin size="large" />
