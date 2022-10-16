@@ -44,7 +44,6 @@ export function RouterLink() {
   return (
     <BrowserRouter>
       <Header />
-      <Home />
       <Routes>
         <Route path={Router.Home} element={<Home />} />
         <Route path={Router.Detail} element={<DetailBlog />} />
