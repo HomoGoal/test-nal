@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-nal/static/css/main.125e73f2.css",
+    "main.js": "/test-nal/static/js/main.deeba9ac.js",
+    "index.html": "/test-nal/index.html",
+    "main.125e73f2.css.map": "/test-nal/static/css/main.125e73f2.css.map",
+    "main.deeba9ac.js.map": "/test-nal/static/js/main.deeba9ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.125e73f2.css",
+    "static/js/main.deeba9ac.js"
+  ]
+}
