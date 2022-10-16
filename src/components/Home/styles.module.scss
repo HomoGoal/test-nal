@@ -1,0 +1,89 @@
+.blogListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 50px 20px;
+  gap: 20px;
+  position: relative;
+}
+.blogListWrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+.blogItem {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 20px;
+  position: relative;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+
+  a {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 375px) {
+    padding: 5px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5px;
+  }
+}
+
+.actionWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.delete {
+  cursor: pointer;
+  color: blue;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.filterContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

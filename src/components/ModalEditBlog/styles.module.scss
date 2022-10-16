@@ -1,0 +1,30 @@
+.modal {
+  :global(.ant-modal-footer) {
+    display: none;
+  }
+}
+
+.groupButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.imageShow {
+  width: 100%;
+  height: 300px;
+  object-fit: center;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+}
+
+.uploadWrap {
+  :global(.ant-upload) {
+    width: 100%;
+  }
+}
+
+.addImage {
+  color: blue;
+}

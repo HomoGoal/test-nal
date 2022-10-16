@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-oauth/google": "^0.2.8",
+    "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,15 +12,27 @@
     "@types/node": "^16.11.65",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "antd": "^4.23.5",
+    "axios": "^1.1.2",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
     "node-sass": "^7.0.3",
+    "query-string": "^7.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/js-cookie": "^3.0.2",
+    "@types/lodash": "^4.14.186",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -33,7 +47,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx",
-    "lint:fix": "eslint src/*.ts --fix"
+    "lint:fix": "eslint src/*.ts --fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -59,9 +74,6 @@
     }
   },
   "lint-staged": {
-    ".*(ts | tsx)": [
-      "npm run lint:fix",
-      "npm run lint"
-    ]
+    "*.{ts,tsx}": "eslint --cache --fix --watchAll=false"
   }
 }

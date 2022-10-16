@@ -1,0 +1,15 @@
+.typeWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: blue !important;
+  }
+}
+
+.avatarShow {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
