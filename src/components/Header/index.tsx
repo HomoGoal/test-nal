@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { logOutAction } from "src/store/authSlice";
 import { Button } from "antd";
 import styles from "./styles.module.scss";
+import { URL } from "src/routes/constants";
 
 export function Header() {
   const [visible, setVisible] = useState<boolean>(false);
@@ -24,7 +25,7 @@ export function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href={URL}>
           BLOG-INTERVIEW TEXT
         </a>
         <div className={styles.avatarWrap}>
