@@ -26,7 +26,7 @@ export function DetailBlog() {
     const data = { "comment[content]": value?.comment };
     dispatch(createCommentAction({ id, data }));
   };
-
+  // ádfadfasd
   return (
     <div className={styles.detailBlogContainer}>
       <div className={styles.detailBlogWrap}>
