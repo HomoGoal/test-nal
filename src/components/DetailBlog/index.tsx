@@ -9,6 +9,9 @@ import { createCommentAction, getListComment } from "src/store/commentSlice";
 export function DetailBlog() {
   const dispatch = useDispatch();
 
+  const params = useParams();
+  console.log(params);
+
   let { id } = useParams();
 
   const { loading, detailBlog } = useSelector(
