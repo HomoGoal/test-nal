@@ -6,7 +6,7 @@ import { Button } from "antd";
 import styles from "./styles.module.scss";
 import { URL } from "src/routes/constants";
 
-export function Header() {
+export default function Header() {
   const [visible, setVisible] = useState<boolean>(false);
 
   const { loading, auth, user } = useSelector(

@@ -1,7 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "../components/Header";
-import { Home } from "../components/Home";
 import { DetailBlog } from "../components/DetailBlog";
 import { Router } from "./constants";
 import webStorage from "src/helpers/webStorage";
@@ -12,14 +10,14 @@ import {
   refreshTokenAction,
 } from "src/store/authSlice";
 import { REFRESH_TOKEN } from "src/constants/configs";
-import { refreshToken } from "src/services/apis/auth";
+
+const Header = lazy(() => import("../components/Header"));
+const Home = lazy(() => import("../components/Home"));
 
 export function RouterLink() {
   const dispatch = useDispatch();
 
   const { first, auth } = useSelector((state: any) => state.authReducer);
-
-  console.log(window.location);
 
   useEffect(() => {
     if (first) {

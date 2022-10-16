@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./styles.module.scss";
 import { Input, Form, Button } from "antd";
@@ -9,14 +9,9 @@ import { createCommentAction, getListComment } from "src/store/commentSlice";
 export function DetailBlog() {
   const dispatch = useDispatch();
 
-  const params = useParams();
-  console.log(params);
-
   let { id } = useParams();
 
-  const { loading, detailBlog } = useSelector(
-    (state: any) => state.blogReducer
-  );
+  const { detailBlog } = useSelector((state: any) => state.blogReducer);
 
   const { auth } = useSelector((state: any) => state.authReducer);
 
@@ -29,7 +24,7 @@ export function DetailBlog() {
     const data = { "comment[content]": value?.comment };
     dispatch(createCommentAction({ id, data }));
   };
-  // ádfadfasd
+
   return (
     <div className={styles.detailBlogContainer}>
       <div className={styles.detailBlogWrap}>
